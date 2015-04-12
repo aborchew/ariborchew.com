@@ -1,11 +1,29 @@
 'use strict';
 
 angular.module('ariborchewcomApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
+  .controller('MainCtrl', function ($scope) {
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-    });
+  	$scope.sections = [
+  		{
+  			'label': 'Skills',
+  			'name': 'skills'
+  		},
+  		{
+  			'label': 'Interests',
+  			'name': 'interests'
+  		},
+  		{
+  			'label': 'Background',
+  			'name': 'background'
+  		},
+  		{
+  			'label': 'Experience',
+  			'name': 'experience'
+  		},
+  		{
+  			'label': 'Contact',
+  			'name': 'contact'
+  		}
+  	]
 
   });

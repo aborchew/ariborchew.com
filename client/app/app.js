@@ -1,15 +1,16 @@
 'use strict';
 
 angular.module('ariborchewcomApp', [
-  'ngCookies',
-  'ngResource',
   'ngSanitize',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'duScroll'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+
     $urlRouterProvider
       .otherwise('/');
 
     $locationProvider.html5Mode(true);
-  });
+
+  })
