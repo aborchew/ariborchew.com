@@ -1,0 +1,39 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.main-container {
+  padding: 50px 0;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.main-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+section {
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 768px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+}
+
+section#contact {
+  background-image: url(../images/jd.jpg);
+}
